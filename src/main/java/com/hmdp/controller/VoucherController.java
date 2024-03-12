@@ -47,11 +47,11 @@ public class VoucherController {
 
     /**
      * 查询店铺的优惠券列表
-     * @param shopId 店铺id
+     * @param venueId 店铺id
      * @return 优惠券列表
      */
-    @GetMapping("/list/{shopId}")
-    public Result queryVoucherOfShop(@PathVariable("shopId") Long shopId) {
-       return voucherService.queryVoucherOfShop(shopId);
+    @GetMapping("/list/{venueId}")
+    public Result queryVoucherOfShop(@PathVariable("venueId") Long venueId) {
+       return voucherService.queryVoucherOfShop(venueId);
     }
 }

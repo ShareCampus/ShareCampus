@@ -33,9 +33,9 @@ public class VoucherServiceImpl extends ServiceImpl<VoucherMapper, Voucher> impl
     private StringRedisTemplate stringRedisTemplate;
 
     @Override
-    public Result queryVoucherOfShop(Long shopId) {
+    public Result queryVoucherOfShop(Long venueId) {
         // 查询优惠券信息
-        List<Voucher> vouchers = getBaseMapper().queryVoucherOfShop(shopId);
+        List<Voucher> vouchers = getBaseMapper().queryVoucherOfShop(venueId);
         // 返回结果
         return Result.ok(vouchers);
     }
