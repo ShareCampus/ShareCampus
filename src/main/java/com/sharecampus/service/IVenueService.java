@@ -9,11 +9,13 @@ import com.sharecampus.entity.Venue;
  *  服务类
  * </p>
  *
+ * @author 虎哥
+ * @since 2021-12-22
  */
 public interface IVenueService extends IService<Venue> {
 
     Result queryById(Long id);
     Result updateByIdWithCache(Venue venue);
-    Result deleteByIdWithCache(Venue venue);
-    Result queryVenueByType(Integer typeId, Integer current);
+
+    Result queryVenueByType(Integer typeId, Integer current, Double x, Double y);
 }

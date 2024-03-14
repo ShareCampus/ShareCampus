@@ -16,6 +16,8 @@ import java.time.LocalDateTime;
  * 
  * </p>
  *
+ * @author 虎哥
+ * @since 2021-12-22
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -35,6 +37,11 @@ public class VenueType implements Serializable {
      * 类型名称
      */
     private String name;
+
+    /**
+     * 图标
+     */
+    // private String icon;
 
     /**
      * 顺序
